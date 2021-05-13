@@ -1,6 +1,6 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
+  --primary: #ff0a78;
   --primary-dark: #e7bf60;
 }
 
@@ -1289,4 +1289,35 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+/* Custom class */
+
+h1 {
+  line-height: 0;
+}
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+. .blog .title {
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+
+.blog .description {
+  font-size: 1rem;
+  margin-left: 10px;
+  width: 300px;
+}
+.blog .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
 }
