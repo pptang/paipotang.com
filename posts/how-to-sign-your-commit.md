@@ -17,13 +17,13 @@ you can see the `Verified` and `Unverified` status along with your commits.
 
 1. Install `gpg` and `pinentry-mac` binaries
 
-```sh
+```bash
 brew install gpg pinentry-mac
 ```
 
 2. Generate a new `gpg` key
 
-```sh
+```bash
 gpg --full-gen-key
 ```
 
@@ -33,13 +33,13 @@ Ref: https://docs.github.com/en/github/authenticating-to-github/generating-a-new
 
 4. Get the `gpg` key id
 
-```sh
+```bash
 gpg --list-secret-keys
 ```
 
 5. Get the public key
 
-```sh
+```bash
 gpg --armor --export YOUR_KEY_ID
 ```
 
@@ -47,32 +47,32 @@ gpg --armor --export YOUR_KEY_ID
 
 7. Configure git locally
 
-```sh
+```bash
 git config --global gpg.program gpg
 git config --global user.signingkey YOU_KEY_ID
 ```
 
 8. Configure `gpg-agent`
 
-```sh
+```bash
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 ```
 
 9. Restart `gpg-agent`
 
-```sh
+```bash
 killall gpg-agent
 ```
 
 10. Sign your commits whenever you commit
 
-```sh
+```bash
 git commit -m "message" -S
 ```
 
 (Optional) 11. Configure globally to sign all your commits
 
-```sh
+```bash
 git config --global commit.gpgsign true
 ```
 
@@ -80,13 +80,13 @@ git config --global commit.gpgsign true
 
 - Exporting
 
-```sh
+```bash
 gpg --export --armor > gpg.keys.backup
 ```
 
 - Importing
 
-```sh
+```bash
 gpg --import gpg.keys.backup
 ```
 
