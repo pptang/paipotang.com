@@ -1,5 +1,5 @@
 ---
-title: How to sign your commit.
+title: How to sign your commit?
 description: Today I learned how I can check if the commits made to any of my account are from verified sources.
 date: 2021-05-13
 tags:

@@ -1293,9 +1293,6 @@ a {
 
 /* Custom class */
 
-h1 {
-  line-height: 0;
-}
 .blog {
   display: flex;
   flex-wrap: wrap;
@@ -1304,7 +1301,7 @@ h1 {
   text-align: left;
 }
 
-. .blog .title {
+.blog .title {
   color: var(--primary-dark);
   font-size: 1.2rem;
   margin: 0 0 1rem;
