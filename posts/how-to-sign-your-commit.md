@@ -27,9 +27,9 @@ brew install gpg pinentry-mac
 gpg --full-gen-key
 ```
 
-3. Follow the prompt messages to finish steps
+3. Follow the prompt messages to finish steps ()
 
-Ref: https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key
+Check details [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)
 
 4. Get the `gpg` key id
 
