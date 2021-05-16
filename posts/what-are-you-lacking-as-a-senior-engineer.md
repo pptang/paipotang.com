@@ -1,7 +1,7 @@
 ---
 title: What are you lacking as a senior software engineer?
 description: A list of check points where a senior software engineer should be equipped with.
-date: 2021-05-13
+date: 2021-05-16
 tags:
   - software engineer
 layout: layouts/post.njk
