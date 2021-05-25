@@ -14,7 +14,7 @@ In order to access certain resource or service on the Google Cloud Platform, we 
 
 ![store service account key locally](/img/posts/impersonate-service-account/store-service-account.svg)
 
-### There are several issues with this approach:
+#### There are several issues with this approach:
 - It's easy to mis-commit this file to the source control tool like Github.
 - The service account key is a long-lived and powerful credentials.
 - You don't know how to store it properly and quite easy to lose it.
