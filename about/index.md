@@ -25,3 +25,11 @@ eleventyNavigation:
 - [Creative Mashi Mashi](https://creativemashimashi.com/): A design studio to unlock your creativity.
 
 ![Creative Mashi Mashi - A design studio to unlock your creativity](/img/projects/creative-mashi-mashi.png)
+
+## My Talks
+
+- [Re-Architecture Transaction Page and Sleep Well](https://youtu.be/VfzafBvLNYc)
+
+[![Test](/img/talks/rearchitecture-transaciton-page.png)](https://youtu.be/VfzafBvLNYc)
+
+As a marketplace app, transaction page is a must-have page along the user journey. It involves heavy business logic and affects the company's Gross Merchandise Volumes. I'm gonna demonstrate some possible challenges and approaches we've applied while re-architecturing this critical page.
