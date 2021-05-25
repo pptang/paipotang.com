@@ -12,7 +12,7 @@ Today I learned how I can impersonate the service account to access the resource
 ## How we do it normally
 In order to access certain resource or service on the Google Cloud Platform, we normally go to the console, generate a new service account key and download it to our local machine. We'll pass the path to this service account key as an environment variable and it'll be consumed when we launch the service locally for development. It can be visualized as follows:
 
-![store service account key locally](../img/posts/impersonate-service-account/store-service-account.svg)
+![store service account key locally](/img/posts/impersonate-service-account/store-service-account.svg)
 
 ### There are several issues with this approach:
 - It's easy to mis-commit this file to the source control tool like Github.
@@ -36,7 +36,7 @@ export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-
 
 The above can easily visualized as below:
 
-![generate a short lived token](../img/posts/impersonate-service-account/generate-short-lived-token.svg)
+![generate a short lived token](/img/posts/impersonate-service-account/generate-short-lived-token.svg)
 
 --- 
 With that being said, you don't bother managing another service acount key anymore 😙!
