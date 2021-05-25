@@ -30,7 +30,7 @@ In this case, the service can access the credential from your local environment 
 
 - Generate the short-lived token on the fly and export it as environment variable
 
-```sh
+```bash
 export GOOGLE_OAUTH_ACCESS_TOKEN=$(gcloud auth print-access-token --impersonate-service-account=<sa-name>.iam.gserviceaccount.com)
 ```
 
