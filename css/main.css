@@ -47,6 +47,7 @@ share-widget {
   right: 20px;
   bottom: 20px;
   opacity: 0.9;
+  z-index: 10;
 }
 
 share-widget div {
@@ -1098,6 +1099,11 @@ footer {
   color: #fff;
   padding: 3em;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 footer > * {
   margin: 1.5em;
