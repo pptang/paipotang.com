@@ -28,8 +28,14 @@ eleventyNavigation:
 
 ## My Talks
 
+- [Risk Reduction of Item Transaction Page in Mercari](https://youtu.be/UUFAAe7fv2U)
+
+[![Preview](/img/talks/risk-reduction-of-itp.webp)](https://youtu.be/VfzafBvLNYc)
+
+Paipo Tang from Mercari will walk you through how we test and perform QA on Mercari app's most important page, which is the Item transaction page. Learn how Mercari looks at testing and development to achieve better quality applications on the smartphone.
+
 - [Re-Architecture Transaction Page and Sleep Well](https://youtu.be/VfzafBvLNYc)
 
-[![Test](/img/talks/rearchitecture-transaciton-page.png)](https://youtu.be/VfzafBvLNYc)
+[![Preview](/img/talks/rearchitecture-transaciton-page.png)](https://youtu.be/VfzafBvLNYc)
 
 As a marketplace app, transaction page is a must-have page along the user journey. It involves heavy business logic and affects the company's Gross Merchandise Volumes. I'm gonna demonstrate some possible challenges and approaches we've applied while re-architecturing this critical page.
