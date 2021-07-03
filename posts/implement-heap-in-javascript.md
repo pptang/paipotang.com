@@ -100,6 +100,8 @@ class Heap {
   }
 
   pop() {
+    if (this.length === 0) return null;
+    if (this.length === 1) return this.arr.pop();
     // The top node will be return
     const currTop = this.arr[0];
     // Get the new top node from the end of the array
@@ -119,8 +121,7 @@ class Heap {
     while (true) {
       const leftChildIndex = index * 2 + 1;
       const rightChildIndex = index * 2 + 2;
-      let swapIndex,
-        needsSwap = false;
+      let swapIndex = index, needsSwap = false;
       let leftChildNode, rightChildNode;
       if (leftChildIndex < heapSize) {
         leftChildNode = this.arr[leftChildIndex];
@@ -132,9 +133,9 @@ class Heap {
       }
       if (rightChildIndex < heapSize) {
         rightChildNode = this.arr[rightChildIndex];
-        const parentNode = this.arr[index];
+        const swapNode = this.arr[swapIndex];
         if (
-          this.compare(rightChildNode, needsSwap ? leftChildNode : parentNode) >
+          this.compare(rightChildNode, swapNode) >
           0
         ) {
           swapIndex = rightChildIndex;
